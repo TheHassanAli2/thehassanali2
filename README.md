@@ -18,19 +18,19 @@
 ## Hey!  
 <ul>
 
-<li>- 🏗️ I’m currently working on <a href="https://github.com/Daggerpov/tutoRice-bot">tutoRice</a>
+<li>- 🏗️ I’m currently working on <a href="https://github.com/Daggerpov/tutoRice-bot">tutoRice</a> </li></br>
   
 
-<li>- 🕹️ I’m currently learning how to use Unity to create a fun and simple horror <a href="https://github.com/TheHassanAli2/Garden-Out">game</a>
+<li>- 🕹️ I’m currently learning how to use Unity to create a fun and simple horror <a href="https://github.com/TheHassanAli2/Garden-Out">game</a> </li></br>
   
 
-<li>- 🧩 I like solving twisty puzzles like Rubik's cubes  
+<li>- 🧩 I like solving twisty puzzles like Rubik's cubes </li></br>
   
 
-<li>- 🎧 I enjoy listening to podcasts about the esports industry  
+<li>- 🎧 I enjoy listening to podcasts about the esports industry as well as gaming </li></br>
   
 
-<li>- 🌻 My favorite snack is sunflower seeds  
+<li>- 🌻 My favorite snack is sunflower seeds </li></br>
 
 </td><td valign="top" width="50%">
 
