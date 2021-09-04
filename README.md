@@ -8,10 +8,7 @@
 
 
 
-### Hey!  
-I'm a **Grade 12** Student at Longfields Davidson Heights Secondary School. I first started coding at around 13 and learned about Python. Ever since then, I've been interested in pursuing programming as a profession and have been creating projects for fun in my free time. 
 
-I developed my interest in programming when I joined my school's FRC Robotics team! I learned how to work in a team and practiced Object Oriented Programming principles. 
   
   
 
@@ -39,7 +36,10 @@ I developed my interest in programming when I joined my school's FRC Robotics te
 </td><td valign="top" width="50%">
 
 <div align="center">
-<img src="https://thehassanali2.github.io/static/images/logo.png" align="center" style="width: 100%" />
+### Hey!  
+I'm a **Grade 12** Student at Longfields Davidson Heights Secondary School. I first started coding at around 13 and learned about Python. Ever since then, I've been interested in pursuing programming as a profession and have been creating projects for fun in my free time. 
+
+I developed my interest in programming when I joined my school's FRC Robotics team! I learned how to work in a team and practiced Object Oriented Programming principles. 
 </div>  
 
 
