@@ -18,7 +18,7 @@
 ## Hey!  
 <ul>
 
-<li>- 🏗️ I’m currently working on [tutoRice](https://github.com/Daggerpov/tutoRice-bot)  
+<li>- 🏗️ I’m currently working on <a href="https://github.com/Daggerpov/tutoRice-bot">tutoRice</a>
   
 
 <li>- 🕹️ I’m currently learning how to use Unity to create a fun and simple horror [game](https://github.com/TheHassanAli2/Garden-Out)  
