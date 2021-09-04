@@ -16,21 +16,21 @@
 
 
 ## Hey!  
-<tr><td valign="top" width="50%">
+<ul>
 
-- 🏗️ I’m currently working on [tutoRice](https://github.com/Daggerpov/tutoRice-bot)  
+<li>- 🏗️ I’m currently working on [tutoRice](https://github.com/Daggerpov/tutoRice-bot)  
   
 
-- 🕹️ I’m currently learning how to use Unity to create a fun and simple horror [game](https://github.com/TheHassanAli2/Garden-Out)  
+<li>- 🕹️ I’m currently learning how to use Unity to create a fun and simple horror [game](https://github.com/TheHassanAli2/Garden-Out)  
   
 
-- 🧩 I like solving twisty puzzles like Rubik's cubes  
+<li>- 🧩 I like solving twisty puzzles like Rubik's cubes  
   
 
-- 🎧 I enjoy listening to podcasts about the esports industry  
+<li>- 🎧 I enjoy listening to podcasts about the esports industry  
   
 
-- 🌻 My favorite snack is sunflower seeds  
+<li>- 🌻 My favorite snack is sunflower seeds  
 
 </td><td valign="top" width="50%">
 
