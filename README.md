@@ -36,7 +36,7 @@ I first started coding at around 13 and learned about Python. Ever since then, I
 <li>- 🎧 I enjoy listening to podcasts about the esports industry as well as gaming </li></br>
   
 
-<li>- 🌻 My favorite snack is sunflower seeds </li></br>
+<li>- 🌻 My favorite snack is sunflower seeds </li>
 
 
 ## My Skill Set  
