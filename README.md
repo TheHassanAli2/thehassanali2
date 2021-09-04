@@ -16,7 +16,7 @@
 
 
 ## Hey!  
-<table><tr><td valign="top" width="50%">
+<tr><td valign="top" width="50%">
 
 - 🏗️ I’m currently working on [tutoRice](https://github.com/Daggerpov/tutoRice-bot)  
   
@@ -37,7 +37,7 @@
 I first started coding at around 13 and learned about Python. Ever since then, I've been interested in pursuing programming as a profession and have been creating projects for fun in my free time. I developed my interest in programming when I joined my school's FRC Robotics team!  
 
 
-</td></tr></table>  
+</td></tr>
 
 <br/> 
 
