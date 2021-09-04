@@ -35,8 +35,7 @@
 
 </td><td valign="top" width="50%">
 
-<div align="center">
-### Hey!  
+<div align="center"> 
 I first started coding at around 13 and learned about Python. Ever since then, I've been interested in pursuing programming as a profession and have been creating projects for fun in my free time. I developed my interest in programming when I joined my school's FRC Robotics team!
 </div>  
 
