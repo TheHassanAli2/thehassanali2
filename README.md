@@ -3,23 +3,13 @@
 </a>
 <a href="https://www.instagram.com/ldh_codeclub/" target="_blank">
     <img align="left" src=https://img.shields.io/badge/LDH_CodeClub-E4405F?style=for-the-badge&logo=instagram&logoColor=white alt=linkedin style="margin-bottom: 5px;" height="40"/>
-  </a>
-  
-
-
-
-
-  
-  
+  </a>  
 
 <br/>  
 
-
 ## Hey!  
 <p>
-
 I first started coding at around 13 and learned about Python. Ever since then, I've been interested in pursuing programming as a profession and have been creating projects for fun in my free time. I developed my interest in programming when I joined my school's FRC Robotics team!  
-
 </p>
 
 <ul>
@@ -36,7 +26,7 @@ I first started coding at around 13 and learned about Python. Ever since then, I
 <li> 🎧 I enjoy listening to podcasts about the esports industry as well as gaming </li></br>
   
 
-<li> 🌻 My favorite snack is sunflower seeds </li>
+<li> 🌻 My favorite snack is sunflower seeds </li> </ul>
 
 
 ## My Skill Set  
