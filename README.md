@@ -29,12 +29,13 @@ I first started coding at around 13 and learned about Python. Ever since then, I
 <li> 🌻 My favorite snack is sunflower seeds </li> </ul>
 
 
-## My Skill Set  
-<table><tr><td valign="top" width="50%">
+# My Skill Set  
+<table><tr>
+  <td bg="D4AF37" valign="top" width="33%">
 
 
 
-### Design  
+## Design  
 <div align="center">  
 <img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/adobe_illustrator-icon.svg" alt="Illustrator" height="75" />  
 <img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/adobepremierepro.png" alt="Premiere Pro" height="75" />  
@@ -46,7 +47,7 @@ I first started coding at around 13 and learned about Python. Ever since then, I
 
 
 
-### Coding  
+## Coding  
 <div align="center">  
 <img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/cplusplus-original.svg" alt="C++" height="75" />  
 <img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/typescript-original.svg" alt="TypeScript" height="75" />  
