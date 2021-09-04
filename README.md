@@ -76,5 +76,3 @@ I developed my interest in programming when I joined my school's FRC Robotics te
 
 <br />
 
-----
-<div align="center">Generated using <a href="https://profilinator.rishav.dev/" target="_blank">Github Profilinator</a></div>
