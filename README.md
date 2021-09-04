@@ -39,9 +39,6 @@ I first started coding at around 13 and learned about Python. Ever since then, I
 <li>- 🌻 My favorite snack is sunflower seeds </li></br>
 
 
-
-<br/> 
-
 ## My Skill Set  
 <table><tr><td valign="top" width="50%">
 
