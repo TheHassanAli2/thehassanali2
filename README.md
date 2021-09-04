@@ -15,7 +15,7 @@
 <br/>  
 
 
-## Rapidfire  
+## Hey!  
 <table><tr><td valign="top" width="50%">
 
 - 🏗️ I’m currently working on [tutoRice](https://github.com/Daggerpov/tutoRice-bot)  
