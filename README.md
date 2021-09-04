@@ -37,7 +37,7 @@ I first started coding at around 13 and learned about Python. Ever since then, I
 </div>
 
 <br/>  
-
+</table>
 
 ## My Skill Set  
 <table><tr><td valign="top" width="50%">
