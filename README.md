@@ -9,7 +9,7 @@
 
 ## Hey!  
 <p>
-I first started coding at around 13 and learned about Python. My father was the one who had insisted that I should learn it, but over time I startedEver since then, I've been interested in pursuing programming as a profession and have been creating projects for fun in my free time. I developed my interest in programming when I joined my school's FRC Robotics team!  
+I first started coding at around 13 and learned about Python. My father was the one who had insisted that I should learn it, but over time I started to enjoy it and became much more invested into it. Ever since then, I've been interested in pursuing programming as a profession and have been creating projects for fun in my free time. I developed my interest in programming when I joined my school's FRC Robotics team!  
 </p>
 
 <ul>
