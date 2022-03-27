@@ -14,7 +14,7 @@ I first started coding at around 13 and learned about Python. My father was the 
 
 <ul>
 
-<li> 🏗️ I’m currently working on <a href="https://github.com/TheHassanAli2/flappy-bird-ai">tutoRice</a> </li></br>
+<li> 🏗️ I’m currently working on a <a href="https://github.com/TheHassanAli2/flappy-bird-ai">Flappy Bird AI</a> </li></br>
   
 
 <li> 🕹️ I’m currently learning how to use Unity to create a fun and simple horror <a href="https://github.com/TheHassanAli2/Garden-Out">game</a> </li></br>
