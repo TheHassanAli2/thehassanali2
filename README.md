@@ -55,6 +55,7 @@ I first started coding at around 13 and learned about Python. My father was the 
 <img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/python-original.svg" alt="Python" height="75" />  
 <img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/raspberrypi.png" alt="Raspberry Pi" height="75" />  
 <img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/flask.png" alt="Flask" height="75" />  
+<img style="margin: 10px" src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FScikit-learn&psig=AOvVaw2lAUzRaGp0CCRANq8MqhkZ&ust=1648504812749000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCIC-u5Kl5_YCFQAAAAAdAAAAABAD" alt="Flask" height="75" /> 
 </div>
 
 </td></tr></table>  
