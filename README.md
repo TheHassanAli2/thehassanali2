@@ -9,7 +9,7 @@
 
 ## Hey!  
 <p>
-I first started coding at around 13 and learned about Python. My father was the one who had insisted that I should learn it, but over time I started to enjoy it and became much more invested into it. Ever since then, I've been interested in pursuing programming as a profession and have been creating projects for fun in my free time. After leading the programming team in my robotics club and becoming a co-leader of our school's Code Club, I have become a great role model for my peers and a mentor for programming projects!
+I first started coding at around 13 and learned about Python. My father was the one who had insisted that I should learn it, but over time I started to enjoy it and became much more invested into it. Ever since then, I've been interested in pursuing programming as a profession and have been creating projects for fun in my free time. After leading the programming team in my robotics club and becoming a co-leader of our school's Code Club, I have become a great role model for my peers and a mentor for programming projects! Now I am pursuing Computer Science at Carleton University.
 </p>
 
 <ul>
@@ -20,7 +20,7 @@ I first started coding at around 13 and learned about Python. My father was the 
 <li> 🕹️ I’m currently learning how to use Unity to create a fun and simple horror <a href="https://github.com/TheHassanAli2/Garden-Out">game</a> </li></br>
   
 
-<li> 🧩 I like solving twisty puzzles like Rubik's cubes </li></br>
+<li> ♟️ I like playing chess! </li></br>
   
 
 <li> 🎧 I enjoy listening to podcasts and other types of long-form content like interviews </li></br>
