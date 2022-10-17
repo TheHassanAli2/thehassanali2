@@ -9,15 +9,15 @@
 
 ## Hey!  
 <p>
-I first started coding at around 13 and learned about Python. My father was the one who had insisted that I should learn it, but over time I started to enjoy it and became much more invested into it. Ever since then, I've been interested in pursuing programming as a profession and have been creating projects for fun in my free time. After leading the programming team in my robotics club and becoming a co-leader of our school's Code Club, I have become a great role model for my peers and a mentor for programming projects! Now I am pursuing Computer Science at Carleton University.
+I first started coding at around 13 and learned about Python. My father was the one who had insisted that I should learn it, but over time I started to enjoy it and became much more invested into it. Ever since then, I've been interested in pursuing programming as a profession and have been creating projects for fun in my free time. After leading the programming team in my robotics club and becoming a co-leader of our school's Code Club, I have become a great role model for my peers and a mentor for programming projects! Now I am a first year at Carleton University with a Hackathon under my belt!
 </p>
 
 <ul>
 
-<li> 🏗️ I’m currently working on a <a href="https://github.com/TheHassanAli2/flappy-bird-ai">Flappy Bird AI</a> </li></br>
+<li> 🏗️ I’m currently working on a <a href="https://github.com/kunwar45/stuapp">Studious Transport</a> </li></br>
   
 
-<li> 🕹️ I’m currently learning how to use Unity to create a fun and simple horror <a href="https://github.com/TheHassanAli2/Garden-Out">game</a> </li></br>
+<li> 📄I’m currently learning how to use Vue to create my website
   
 
 <li> ♟️ I like playing chess! </li></br>
