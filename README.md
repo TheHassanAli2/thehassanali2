@@ -9,7 +9,7 @@
 
 ## Hey!  
 <p>
-I first started coding at around 13 and learned about Python. My father was the one who had insisted that I should learn it, but over time I started to enjoy it and became much more invested into it. Ever since then, I've been interested in pursuing programming as a profession and have been creating projects for fun in my free time. After leading the programming team in my robotics club and becoming a co-leader of our school's Code Club, I have become a great role model for my peers and a mentor for programming projects! Now I am a first year at Carleton University with a Hackathon under my belt!
+As someone who has always been very involved in the community, I have been trying to lead and create events for students my age my whole life. After leading the programming team in my high school's robotics club and becoming a co-leader of our school's Code Club, I have become a great role model for my peers and a mentor for programming projects! Now I am a first year at Carleton University with a Hackathon under my belt! Currently, I am trying to create an AI learning/workshop type event called DiveAI, so stay tuned!
 </p>
 
 <ul>
@@ -17,7 +17,7 @@ I first started coding at around 13 and learned about Python. My father was the 
 <li> 🏗️ I’m currently working on a <a href="https://github.com/kunwar45/stuapp">Studious Transport</a> </li></br>
   
 
-<li> 📄I’m currently learning how to use Vue to create my website
+<li> 📄I’m currently learning how to use React and Java Springboot to create a well-rounded fullstack web application.
   
 
 <li> ♟️ I like playing chess! </li></br>
@@ -56,6 +56,13 @@ I first started coding at around 13 and learned about Python. My father was the 
 <img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/raspberrypi.png" alt="Raspberry Pi" height="75" />  
 <img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/flask.png" alt="Flask" height="75" />  
 <img style="margin: 10px" src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="SKLearn" height="75" /> 
+<img style="margin: 10px" src="https://mma.prnewswire.com/media/599053/MongoDB_Logo.jpg?p=facebook" alt="C++" height="75" />  
+<!-- <img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/typescript-original.svg" alt="TypeScript" height="75" />  
+<img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/nodejs-original-wordmark.svg" alt="Node.js" height="75" />  
+<img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/python-original.svg" alt="Python" height="75" />  
+<img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/raspberrypi.png" alt="Raspberry Pi" height="75" />  
+<img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/flask.png" alt="Flask" height="75" />  
+<img style="margin: 10px" src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="SKLearn" height="75" /> -->
 </div>
 
 </td></tr></table>  
