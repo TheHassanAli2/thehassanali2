@@ -6,7 +6,7 @@
 
 ## Hey!  
 <p>
-As someone who has always been very involved in the community, I have been trying to lead and create events for students my age my whole life. After leading the programming team in my high school's robotics club and becoming a co-leader of our school's Code Club, I have become a great role model for my peers and a mentor for programming projects! Now I am a first year at Carleton University with a Hackathon under my belt! Currently, I am trying to create an AI learning/workshop type event called DiveAI, so stay tuned!
+As someone who has always been very involved in the community, I have been trying to lead and create events for students my age my whole life. After leading the programming team in my high school's robotics club and becoming a co-leader of our school's Code Club, I have become a great role model for my peers and a mentor for programming projects. Now I am a second-year at Carleton University. Currently, I am looking for jobs and focusing on a Spring Boot project called PlanIt!
 </p>
 
 <ul>
@@ -15,15 +15,11 @@ As someone who has always been very involved in the community, I have been tryin
   
 
 <li> 📄I’m currently learning how to use Flutter and Java Springboot to create a well-rounded fullstack web application.
+
+<li> Applying to jobs for the summer term!
   
 
 <li> ♟️ I like playing chess! </li></br>
-  
-
-<li> 🎧 I enjoy listening to podcasts and other types of long-form content like interviews </li></br>
-  
-
-<li> 🌻 My favorite snack is sunflower seeds </li> </ul>
 
 
 # My Skill Set  
