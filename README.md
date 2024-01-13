@@ -14,10 +14,10 @@ As someone who has always been very involved in the community, I have been tryin
 
 <ul>
 
-<li> 🏗️ I’m currently working on a <a href="https://github.com/kunwar45/stuapp">Studious Transport</a> </li></br>
+<li> 🏗️ I’m currently working on a <a href="https://github.com/SpringBooty/SpringBooty">PlanIt</a> </li></br>
   
 
-<li> 📄I’m currently learning how to use React and Java Springboot to create a well-rounded fullstack web application.
+<li> 📄I’m currently learning how to use Flutter and Java Springboot to create a well-rounded fullstack web application.
   
 
 <li> ♟️ I like playing chess! </li></br>
