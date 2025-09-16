@@ -6,7 +6,7 @@
 
 ## Hey!  
 <p>
-As someone who has always been very involved in the community, I have been trying to lead and create events for students my age my whole life. After leading the programming team in my high school's robotics club and becoming a co-leader of our school's Code Club, I have become a great role model for my peers and a mentor for programming projects. Now I am a second-year at Carleton University. Currently, I am looking for jobs and focusing on a Spring Boot project called PlanIt!
+As someone who has always been very involved in the community, I have been trying to lead and create events for students my age my whole life. After leading the programming team in my high school's robotics club and becoming a co-leader of our school's Code Club, I have become a great role model for my peers and a mentor for programming projects. Now I am a third-year at Carleton University. Currently, I am looking for jobs and focusing on a C++ project creating an embedded platform for a raspberry pi to open my garage door!
 </p>
 
 <ul>
