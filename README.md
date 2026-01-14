@@ -6,20 +6,8 @@
 
 ## Hey!  
 <p>
-As someone who has always been very involved in the community, I have been trying to lead and create events for students my age my whole life. After leading the programming team in my high school's robotics club and becoming a co-leader of our school's Code Club, I have become a great role model for my peers and a mentor for programming projects. Now I am a third-year at Carleton University. Currently, I am looking for jobs and focusing on a C++ project creating an embedded platform for a raspberry pi to open my garage door!
+As someone who has always been very involved in the community, I have been trying to lead and create events for students my age my whole life. After leading the programming team in my high school's robotics club and becoming a co-leader of our school's Code Club, I have learned to really enjoy creating events and learning opportunities for people in this space, especially related to AI. Now I am a third-year at Carleton University. Currently, I am looking for jobs and focusing on a C++ project creating an embedded platform for a raspberry pi to open my garage door!
 </p>
-
-<ul>
-
-<li> 🏗️ I’m currently working on a <a href="https://github.com/SpringBooty/SpringBooty">PlanIt</a> </li></br>
-  
-
-<li> 📄I’m currently learning how to use Flutter and Java Springboot to create a well-rounded fullstack web application.
-
-<li> Applying to jobs for the summer term!
-  
-
-<li> ♟️ I like playing chess! </li></br>
 
 
 # My Skill Set  
