@@ -1,0 +1,252 @@
+
+<style>
+  * { box-sizing: border-box; }
+  .container { padding: 1.5rem 1rem; max-width: 700px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; gap: 1.25rem; }
+  .board { position: relative; width: 360px; height: 360px; background: #d4cfc8; border-radius: var(--border-radius-lg); padding: 6px; }
+  .slot { position: absolute; width: 110px; height: 110px; display: flex; align-items: flex-end; justify-content: center; padding-bottom: 8px; border-radius: 6px; border: 0.5px solid #b8b2aa; background: #cfc9c1; font-family: var(--font-serif); font-style: italic; font-size: 13px; color: #6b6359; letter-spacing: 0.04em; user-select: none; }
+  .slot.center { background: transparent; border: none; }
+  .piece { position: absolute; width: 110px; height: 110px; display: flex; align-items: center; justify-content: center; border-radius: 6px; background: #b6ad9f; border: 0.5px solid #8d8478; cursor: pointer; transition: top 0.18s cubic-bezier(0.4,0,0.2,1), left 0.18s cubic-bezier(0.4,0,0.2,1); z-index: 2; }
+  .piece:hover { background: #beb5a7; }
+  .piece.locked { background: #c9b8a8; border-color: #8a6d54; cursor: default; }
+  .piece.locked .icon { color: #6b3d22; }
+  .piece .icon { color: #4a3e30; pointer-events: none; }
+  .success-banner { width: 100%; padding: 14px 18px; border-radius: var(--border-radius-md); border: 0.5px solid var(--color-border-success); background: var(--color-background-success); display: none; }
+  .success-banner.visible { display: block; }
+  .success-text { font-size: 14px; color: var(--color-text-success); font-weight: 500; }
+  .success-sub { font-size: 13px; color: var(--color-text-success); margin-top: 4px; opacity: 0.85; }
+  .btn-row { display: flex; gap: 8px; }
+  .action-btn { font-size: 13px; padding: 8px 16px; border-radius: var(--border-radius-md); border: 0.5px solid var(--color-border-secondary); background: var(--color-background-primary); cursor: pointer; color: var(--color-text-secondary); }
+  .action-btn:hover { background: var(--color-background-secondary); }
+  @media (prefers-color-scheme: dark) {
+    .board { background: #2a2724; }
+    .slot { background: #34302c; border-color: #4a443e; color: #948a7e; }
+    .piece { background: #574e44; border-color: #3c352e; }
+    .piece:hover { background: #635a4f; }
+    .piece.locked { background: #6b4d33; border-color: #4a3422; }
+    .piece.locked .icon { color: #e8c89a; }
+    .piece .icon { color: #d8cfc0; }
+  }
+</style>
+
+<div class="container">
+  <div class="board" id="board"></div>
+  <div class="success-banner" id="successBanner">
+    <div class="success-text">The mechanism accepts the order.</div>
+    <div class="success-sub">Each title finds its bearer. The portal lock turns. You may now place yourselves upon the resurrector slot.</div>
+  </div>
+  <div class="btn-row">
+    <button class="action-btn" id="resetBtn">Reset</button>
+  </div>
+</div>
+
+<script>
+// Layout: 3x3 grid. Index 0..8 going row by row.
+//   0 1 2
+//   3 4 5
+//   6 7 8
+// Slot words at each grid position (center = empty / no word):
+const SLOT_WORDS = {
+  0: "Builder",
+  1: "Resurrector",
+  2: "Purifier",
+  3: "Brother",
+  4: null,
+  5: "Successor",
+  6: "Prisoner",
+  7: "Killer",
+  8: "Leader"
+};
+
+// Each piece has an id, a target slot index (where it belongs), and an icon name.
+const PIECES = [
+  { id: "hammer",   targetIdx: 0, name: "Builder",    icon: "hammer"   },
+  { id: "drop",     targetIdx: 5, name: "Successor",  icon: "drop"     },
+  { id: "z",        targetIdx: 2, name: "Purifier",   icon: "z"        },
+  { id: "crown",    targetIdx: 8, name: "Leader",     icon: "crown"    },
+  { id: "knife",    targetIdx: 7, name: "Killer",     icon: "knife"    },
+  { id: "prisoner", targetIdx: 6, name: "Prisoner",   icon: "prisoner" },
+  { id: "g",        targetIdx: 3, name: "Brother",    icon: "g"        }
+];
+
+// State: pieceAt[gridIdx] = piece.id  OR null if empty.
+let pieceAt = {};
+
+function buildSolved() {
+  const m = {};
+  for (let i = 0; i < 9; i++) m[i] = null;
+  for (const p of PIECES) m[p.targetIdx] = p.id;
+  // Ensure both index 1 (resurrector) and index 4 (center) are empty.
+  m[1] = null;
+  m[4] = null;
+  return m;
+}
+
+function adjacent(idx) {
+  const r = Math.floor(idx / 3), c = idx % 3;
+  const adj = [];
+  if (r > 0) adj.push(idx - 3);
+  if (r < 2) adj.push(idx + 3);
+  if (c > 0) adj.push(idx - 1);
+  if (c < 2) adj.push(idx + 1);
+  return adj;
+}
+
+function emptySlots() {
+  return Object.keys(pieceAt).filter(k => pieceAt[k] === null).map(Number);
+}
+
+// Scramble by performing N random valid slides from the solved state — guarantees solvability.
+function scramble(steps = 60) {
+  pieceAt = buildSolved();
+  let last = -1;
+  for (let i = 0; i < steps; i++) {
+    const empties = emptySlots();
+    const moves = [];
+    for (const e of empties) {
+      for (const a of adjacent(e)) {
+        if (pieceAt[a] !== null && a !== last) {
+          moves.push({ from: a, to: e });
+        }
+      }
+    }
+    if (!moves.length) continue;
+    const chosen = moves[Math.floor(Math.random() * moves.length)];
+    pieceAt[chosen.to] = pieceAt[chosen.from];
+    pieceAt[chosen.from] = null;
+    last = chosen.to;
+  }
+  // Verify scramble actually moved things — if solved, do a few more shuffles
+  if (isSolved()) scramble(30);
+}
+
+function isSolved() {
+  for (const p of PIECES) {
+    if (pieceAt[p.targetIdx] !== p.id) return false;
+  }
+  return true;
+}
+
+function tryMove(pieceId) {
+  // Find current slot of piece
+  let from = -1;
+  for (const k of Object.keys(pieceAt)) if (pieceAt[k] === pieceId) { from = +k; break; }
+  if (from < 0) return;
+  // Find adjacent empty
+  for (const a of adjacent(from)) {
+    if (pieceAt[a] === null) {
+      pieceAt[a] = pieceId;
+      pieceAt[from] = null;
+      render();
+      if (isSolved()) {
+        document.getElementById("successBanner").classList.add("visible");
+      }
+      return;
+    }
+  }
+}
+
+function iconSVG(name, color) {
+  const c = color;
+  const stroke = `stroke="${c}" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" fill="none"`;
+  switch (name) {
+    case "hammer":
+      // Hammer: rectangular head + handle
+      return `<svg viewBox="0 0 64 64" width="58" height="58">
+        <rect x="14" y="14" width="36" height="14" rx="2" fill="${c}"/>
+        <rect x="29" y="28" width="6" height="32" rx="1.5" fill="${c}"/>
+      </svg>`;
+    case "z":
+      // Z glyph
+      return `<svg viewBox="0 0 64 64" width="58" height="58">
+        <path d="M16 16 L48 16 L18 48 L48 48" ${stroke}/>
+      </svg>`;
+    case "crown":
+      // Crown: 3 peaks + base
+      return `<svg viewBox="0 0 64 64" width="58" height="58">
+        <path d="M12 44 L16 22 L24 32 L32 18 L40 32 L48 22 L52 44 Z" fill="${c}"/>
+        <rect x="12" y="44" width="40" height="6" rx="1" fill="${c}"/>
+      </svg>`;
+    case "knife":
+      // Knife: blade + small handle
+      return `<svg viewBox="0 0 64 64" width="58" height="58">
+        <path d="M14 50 L46 18 L52 18 L48 24 L18 54 Z" fill="${c}"/>
+        <rect x="44" y="14" width="14" height="6" rx="1" fill="${c}" transform="rotate(45 51 17)"/>
+      </svg>`;
+    case "prisoner":
+      // Prisoner: figure behind bars
+      return `<svg viewBox="0 0 64 64" width="58" height="58">
+        <circle cx="32" cy="22" r="6" fill="${c}"/>
+        <path d="M22 50 Q22 34 32 34 Q42 34 42 50" fill="${c}"/>
+        <line x1="14" y1="12" x2="14" y2="56" ${stroke}/>
+        <line x1="26" y1="12" x2="26" y2="56" ${stroke}/>
+        <line x1="38" y1="12" x2="38" y2="56" ${stroke}/>
+        <line x1="50" y1="12" x2="50" y2="56" ${stroke}/>
+      </svg>`;
+    case "g":
+      // G glyph
+      return `<svg viewBox="0 0 64 64" width="58" height="58">
+        <path d="M48 22 Q42 14 32 14 Q18 14 18 32 Q18 50 32 50 Q42 50 46 44 L46 34 L34 34" ${stroke}/>
+      </svg>`;
+    case "drop":
+      // Raindrop / teardrop
+      return `<svg viewBox="0 0 64 64" width="58" height="58">
+        <path d="M32 12 Q20 30 20 40 Q20 52 32 52 Q44 52 44 40 Q44 30 32 12 Z" fill="${c}"/>
+      </svg>`;
+    default:
+      return "";
+  }
+}
+
+function gridPos(idx) {
+  const r = Math.floor(idx / 3), c = idx % 3;
+  return { left: c * 116 + 6, top: r * 116 + 6 };
+}
+
+function render() {
+  const board = document.getElementById("board");
+  board.innerHTML = "";
+
+  // Draw all 9 slots first (background layer)
+  for (let i = 0; i < 9; i++) {
+    const { left, top } = gridPos(i);
+    const div = document.createElement("div");
+    div.className = "slot" + (i === 4 ? " center" : "");
+    div.style.left = left + "px";
+    div.style.top = top + "px";
+    if (SLOT_WORDS[i]) div.textContent = SLOT_WORDS[i];
+    board.appendChild(div);
+  }
+
+  // Draw pieces on top
+  const dark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  for (const piece of PIECES) {
+    let here = -1;
+    for (const k of Object.keys(pieceAt)) if (pieceAt[k] === piece.id) { here = +k; break; }
+    if (here < 0) continue;
+    const { left, top } = gridPos(here);
+    const isLocked = pieceAt[piece.targetIdx] === piece.id;
+    const div = document.createElement("div");
+    div.className = "piece" + (isLocked ? " locked" : "");
+    div.style.left = left + "px";
+    div.style.top = top + "px";
+    div.dataset.id = piece.id;
+    const iconColor = isLocked
+      ? (dark ? "#e8c89a" : "#6b3d22")
+      : (dark ? "#d8cfc0" : "#4a3e30");
+    div.innerHTML = `<span class="icon">${iconSVG(piece.icon, iconColor)}</span>`;
+    div.onclick = () => tryMove(piece.id);
+    board.appendChild(div);
+  }
+}
+
+document.getElementById("resetBtn").onclick = () => {
+  document.getElementById("successBanner").classList.remove("visible");
+  scramble(60);
+  render();
+};
+
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', render);
+
+scramble(60);
+render();
+</script>
